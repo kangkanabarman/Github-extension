@@ -1,0 +1,26 @@
+{
+	"extends": "@sindresorhus/tsconfig",
+	"compilerOptions": {
+		"outDir": "./distribution/assets",
+		"rootDir": "./",
+		"module": "preserve",
+		"moduleResolution": "bundler",
+		"declaration": false,
+		"noUncheckedIndexedAccess": false,
+		"noPropertyAccessFromIndexSignature": false,
+		"resolveJsonModule": true,
+		"verbatimModuleSyntax": true,
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ESNext.Collection",
+			"ESNext.Object",
+			"ES2024"
+		]
+	},
+	"include": [
+		"source",
+		"test",
+		"build"
+	]
+}
